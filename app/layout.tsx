@@ -1,7 +1,6 @@
-import { ChakraProvider } from "@chakra-ui/react";
 import { Metadata } from "next";
 import "./globals.css";
-import { theme } from "./lib/theme";
+import { Providers } from "./providers";
 
 const currentYear = new Date().getFullYear();
 
@@ -19,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ChakraProvider theme={theme}>
-      <html lang="en-GB">
-        <body>{children}</body>
-      </html>
-    </ChakraProvider>
+    <html lang="en-GB">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }
