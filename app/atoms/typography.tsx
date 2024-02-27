@@ -54,8 +54,12 @@ export const H1 = (props: HeadingProps) => (
   <Heading size={["2xl", null, "3xl"]} {...props} />
 );
 
+export const H2 = (props: HeadingProps) => (
+  <Heading size={["xl", null, "2xl"]} mb={6} {...props} />
+);
+
 export const H3 = (props: HeadingProps) => (
-  <Heading size="xl" mb={6} {...props} />
+  <Heading size={["lg", null, "xl"]} mb={6} {...props} />
 );
 
 export const H4 = (props: HeadingProps) => (

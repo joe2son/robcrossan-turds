@@ -1,6 +1,6 @@
 import { Box, Flex, Highlight, Stack } from "@chakra-ui/react";
 import Image from "next/image";
-import { A, H1, PLarge } from "./atoms/typography";
+import { A, H1, H2, PLarge } from "./atoms/typography";
 import { Card } from "./components/Card";
 import { HomepageHero } from "./components/HomepageHero";
 import { Menu } from "./components/Menu";
@@ -45,6 +45,7 @@ export default function Home() {
           color="white"
           position="relative"
         >
+          <H2>Welcome</H2>
           <PLarge>
             <Highlight
               query={[
