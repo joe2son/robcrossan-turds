@@ -30,12 +30,15 @@ const EditorialContainer = ({ children, ...props }: FlexProps) => (
   </Flex>
 );
 
-type TravelLinkType = {
-  href: string;
+type TravelLinkType = FC<
+  FlexProps & {
+    href: string;
+  }
+> & {
   Subheader: FC<TextProps>;
 };
 
-const TravelLink: FC<TravelLinkType> = ({ href, children, ...props }) => (
+const TravelLink: TravelLinkType = ({ href, children, ...props }) => (
   <A href={href} isExternal>
     <Flex py={5} {...props}>
       <Flex
