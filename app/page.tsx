@@ -127,7 +127,7 @@ export default function Home() {
         <Card
           href="/plays-and-theatre"
           imageAlt="Plays & theatre"
-          imageSrc="/theatre.jpg"
+          imageSrc="/theatre-thumb.jpg"
           index={4}
         >
           Plays & theatre
