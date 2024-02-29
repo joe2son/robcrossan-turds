@@ -45,7 +45,7 @@ export default function Home() {
           color="white"
           position="relative"
         >
-          <H2>Welcome</H2>
+          <H2 color="orange.400">Welcome</H2>
           <PLarge>
             <Highlight
               query={[
@@ -96,31 +96,39 @@ export default function Home() {
       <Stack
         direction="row"
         wrap="wrap"
-        bg="cyan.500"
         justify="center"
         p={[6, null, 10]}
+        gap={5}
       >
         <Card
           href="/journalism"
-          imageAlt="Journalism"
-          imageSrc="/suitcases.jpg"
+          imageAlt="Map"
+          imageSrc="/map-thumb.jpg"
+          index={1}
         >
           Journalism
         </Card>
         <Card
           href="/broadcasting"
-          imageAlt="Broadcasting"
-          imageSrc="/suitcases.jpg"
+          imageAlt="Microphone"
+          imageSrc="/mic-thumb.jpg"
+          index={2}
         >
           Broadcasting
         </Card>
-        <Card href="/journalism" imageAlt="My books" imageSrc="/suitcases.jpg">
+        <Card
+          href="/my-books"
+          imageAlt="Books"
+          imageSrc="/books-thumb.jpg"
+          index={3}
+        >
           My books
         </Card>
         <Card
-          href="/journalism"
+          href="/plays-and-theatre"
           imageAlt="Plays & theatre"
-          imageSrc="/suitcases.jpg"
+          imageSrc="/theatre.jpg"
+          index={4}
         >
           Plays & theatre
         </Card>

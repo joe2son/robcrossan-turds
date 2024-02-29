@@ -73,8 +73,8 @@ export default function Journalism() {
       <Menu />
       <Hero color="white" position="relative">
         <Image
-          src="/suitcases.jpg"
-          alt="Suitcases"
+          src="/map.jpg"
+          alt="Map"
           width={1200}
           height={500}
           priority
