@@ -34,6 +34,20 @@ export const PLarge = (props: TextProps) => (
   />
 );
 
+export const PLargeDropCap = (props: TextProps) => (
+  <PLarge
+    _firstLetter={{
+      float: "left",
+      fontSize: ["85px", null, "96px"],
+      lineHeight: 0.5,
+      marginTop: ["1.4rem", null, "1.55rem"],
+      marginRight: "0.8rem",
+      color: "orange.500",
+    }}
+    {...props}
+  />
+);
+
 export const PSmall = (props: TextProps) => (
   <Text fontSize="sm" fontFamily={fonts.body} mb={5} {...props} />
 );

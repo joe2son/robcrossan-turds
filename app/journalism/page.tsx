@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { A, H1, H3, PLarge, PSmall } from "../atoms/typography";
+import { A, H1, H3, PLarge, PLargeDropCap, PSmall } from "../atoms/typography";
 import { Hero } from "../components/Hero";
 import { Menu } from "../components/Menu";
 import { PageFooter } from "../components/PageFooter";
@@ -20,11 +20,7 @@ import articlesJson from "./articles.json";
 
 const EditorialContainer = ({ children, ...props }: FlexProps) => (
   <Flex {...props}>
-    <Box
-      margin="auto"
-      maxWidth={["100%", null, "400px", "800px"]}
-      px={[4, null, 10]}
-    >
+    <Box margin="auto" maxWidth={["100%", null, "800px"]} px={[4, null, 10]}>
       {children}
     </Box>
   </Flex>
@@ -110,24 +106,39 @@ export default function Journalism() {
         </Flex>
       </Hero>
 
-      <EditorialContainer py={[8, null, 10]} bg="yellow.400">
+      <EditorialContainer py={[8, null, 10]} bg="orange.100">
         <Box
           position="relative"
           p={[6, null, 10]}
           border="1px solid"
           bg="white"
         >
-          <PLarge
-            _firstLetter={{
-              fontSize: ["4xl", null, "6xl"],
-              lineHeight: 1,
-              color: "orange.500",
-            }}
-          >
+          <PLargeDropCap>
             I am one of the UK’s most well travelled writers having visited over
             140 different countries in the last ten years on assignment for
             newspapers and magazines.
-          </PLarge>
+          </PLargeDropCap>
+
+          <Box
+            width={["240px", "320px"]}
+            transform="rotate(3deg)"
+            my={5}
+            mx="auto"
+            position={["initial", null, "absolute"]}
+            right="-250px"
+            bottom="-230px"
+          >
+            <Image
+              src="/polaroid.png"
+              alt="Polaroid of Rob"
+              width={705}
+              height={854}
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </Box>
 
           <PLarge mb={0}>
             I’ve drunk pints in the most remote pub on earth in Tristan da
@@ -145,9 +156,9 @@ export default function Journalism() {
           <Box key={i}>
             <TravelLink href={article.link}>
               {article.title}
-              {article.subtitle && (
+              {/* {article.subtitle && (
                 <TravelLink.Subheader>{article.subtitle}</TravelLink.Subheader>
-              )}
+              )} */}
             </TravelLink>
 
             <Divider my={0} />
