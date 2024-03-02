@@ -1,17 +1,9 @@
 "use client";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Divider,
-  Flex,
-  FlexProps,
-  Text,
-  TextProps,
-} from "@chakra-ui/react";
+import { Box, Divider, Flex, FlexProps, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
-import { A, H1, H3, PLarge, PLargeDropCap, PSmall } from "../atoms/typography";
+import { ListicalLink } from "../atoms/ListicalLink";
+import { H1, H3, PLarge, PLargeDropCap } from "../atoms/typography";
 import { Hero } from "../components/Hero";
 import { Menu } from "../components/Menu";
 import { PageFooter } from "../components/PageFooter";
@@ -25,43 +17,6 @@ const EditorialContainer = ({ children, ...props }: FlexProps) => (
     </Box>
   </Flex>
 );
-
-type TravelLinkType = FC<
-  FlexProps & {
-    href: string;
-  }
-> & {
-  Subheader: FC<TextProps>;
-};
-
-const TravelLink: TravelLinkType = ({ href, children, ...props }) => (
-  <A href={href} isExternal>
-    <Flex py={5} {...props}>
-      <Flex
-        boxSize={7}
-        bg="orange.100"
-        rounded="full"
-        justify="center"
-        align="center"
-        mr={3}
-        flexShrink={0}
-      >
-        <ExternalLinkIcon color="gray.500" />
-      </Flex>
-      <PLarge mb={0} fontWeight="bold">
-        {children}
-      </PLarge>
-    </Flex>
-  </A>
-);
-
-const _TravelSubheader: FC<TextProps> = ({ children, ...props }) => (
-  <PSmall fontWeight="normal" mb={0} {...props}>
-    {children}
-  </PSmall>
-);
-
-TravelLink.Subheader = _TravelSubheader;
 
 export default function Journalism() {
   return (
@@ -154,12 +109,12 @@ export default function Journalism() {
 
         {articlesJson.map((article, i) => (
           <Box key={i}>
-            <TravelLink href={article.link}>
+            <ListicalLink href={article.link}>
               {article.title}
               {/* {article.subtitle && (
                 <TravelLink.Subheader>{article.subtitle}</TravelLink.Subheader>
               )} */}
-            </TravelLink>
+            </ListicalLink>
 
             <Divider my={0} />
           </Box>

@@ -2,12 +2,12 @@
 import { Box, Divider, Flex, FlexProps, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { LaurelIcon } from "../atoms/LaurelIcon";
 import { A, H1, PLarge } from "../atoms/typography";
 import { Hero } from "../components/Hero";
 import { Menu } from "../components/Menu";
 import { PageFooter } from "../components/PageFooter";
 import { fonts } from "../lib/theme";
-import { LaurelIcon } from "./LaurelIcon";
 
 const EditorialContainer = ({ children, ...props }: FlexProps) => (
   <Flex {...props}>

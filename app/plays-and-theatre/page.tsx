@@ -1,8 +1,11 @@
 "use client";
-import { Box, Flex, FlexProps, Text } from "@chakra-ui/react";
+import { StarIcon } from "@chakra-ui/icons";
+import { Box, Divider, Flex, FlexProps, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { H1, H2 } from "../atoms/typography";
+import { LaurelIcon } from "../atoms/LaurelIcon";
+import { ListicalLink } from "../atoms/ListicalLink";
+import { A, H1, H3, P } from "../atoms/typography";
 import { Hero } from "../components/Hero";
 import { Menu } from "../components/Menu";
 import { PageFooter } from "../components/PageFooter";
@@ -65,10 +68,109 @@ export default function MyBooks() {
         textAlign="center"
         border="1px solid"
       >
-        <Flex width="100%">
-          <H2>[ WIP ]</H2>
-        </Flex>
+        <Box
+          w="220px"
+          shadow="0px 6px 8px 3px rgba(0,0,0,0.3)"
+          rounded="sm"
+          overflow="hidden"
+          mt={10}
+          mb={7}
+          mx="auto"
+        >
+          <Image
+            src="/gaffer.png"
+            alt="Gaffer"
+            width={200}
+            height={283}
+            style={{ width: "100%", height: "auto" }}
+          />
+        </Box>
+
+        <Box position="relative">
+          <LaurelIcon width="160px" height="auto" />
+          <Stack
+            direction="row"
+            gap={1}
+            position="absolute"
+            top={3}
+            left={0}
+            w="100%"
+            justifyContent="center"
+          >
+            <StarIcon width={4} />
+            <StarIcon width={4} />
+            <StarIcon width={4} />
+            <StarIcon width={4} />
+            <StarIcon width={4} />
+          </Stack>
+        </Box>
+
+        <P mt={6}>
+          “<i>A tour de force</i>” — <Box as="span">The i Paper</Box>
+        </P>
+
+        <P>
+          I wrote my debut play,{" "}
+          <strong>
+            <i>The Gaffer</i>
+          </strong>
+          , in 2022, about an ageing football manager dealing with deep buried
+          trauma. It debuted in April 2023 at the{" "}
+          <A href="https://inkfestival.org/" target="_blank">
+            INK Festival
+          </A>{" "}
+          starring Chris Larner (formerly of “London’s Burning” fame).
+        </P>
+
+        <P>
+          Funded and produced by INK Productions, It went on to play at the
+          Underbelly venue as part of the Edinburgh Fringe during Aug 2023.
+        </P>
+
+        <P>
+          Given five stars by the ipaper, it was described as a 'tour de force'
+          and a 'powerful, disturbing work. It was also listed by The Times as
+          being one of the 40 Must See Shows At The Fringe 2023.
+        </P>
+
+        <Divider my={7} />
+
+        <H3>Read some of the write ups below:</H3>
+
+        <ListicalLink
+          href="https://inews.co.uk/culture/radio/radio-drama-powerful-vital-cuts-funding-crisis-2282287"
+          colorScheme="blue"
+          hasIcon={false}
+        >
+          Radio drama is powerful and vital – cuts to airtime and funding have
+          put its future in crisis
+        </ListicalLink>
+
+        <Divider my={0} />
+
+        <ListicalLink
+          href="https://www.thetimes.co.uk/article/best-shows-edinburgh-festival-2023-international-fringe-comedy-theatre-music-art-dance-p6r7hp5mt"
+          colorScheme="blue"
+          hasIcon={false}
+        >
+          40 must-see shows at Edinburgh Festival 2023: the critics’ choice
+        </ListicalLink>
       </EditorialContainer>
+
+      <Box h={["300px", null, "450px"]} w="100%" overflow="hidden">
+        <Image
+          src="/street-poster.jpg"
+          alt="The Gaffer poster in the street"
+          width={1639}
+          height={1093}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center center",
+          }}
+        />
+      </Box>
 
       <PageFooter />
     </>
