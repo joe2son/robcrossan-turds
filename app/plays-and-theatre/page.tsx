@@ -72,7 +72,6 @@ export default function MyBooks() {
           shadow="0px 6px 8px 3px rgba(0,0,0,0.3)"
           rounded="sm"
           overflow="hidden"
-          mt={10}
           mb={7}
           mx="auto"
         >
