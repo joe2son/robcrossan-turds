@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LaurelIcon } from "../atoms/LaurelIcon";
 import { ListicalLink } from "../atoms/ListicalLink";
-import { A, H1, H3, P } from "../atoms/typography";
+import { A, H1, H3, P, PLarge } from "../atoms/typography";
 import { Hero } from "../components/Hero";
 import { Menu } from "../components/Menu";
 import { PageFooter } from "../components/PageFooter";
@@ -104,9 +104,9 @@ export default function MyBooks() {
           </Stack>
         </Box>
 
-        <P mt={6}>
-          “<i>A tour de force</i>” — <Box as="span">The i Paper</Box>
-        </P>
+        <PLarge my={8} p={3} border="1px solid" color="gray.700">
+          <i>“A tour de force”</i> — <Box as="span">The i Paper</Box>
+        </PLarge>
 
         <P>
           I wrote my debut play,{" "}
