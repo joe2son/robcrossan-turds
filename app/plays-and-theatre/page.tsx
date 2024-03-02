@@ -66,7 +66,6 @@ export default function MyBooks() {
         py={[8, null, 10]}
         bg="blackAlpha.50"
         textAlign="center"
-        border="1px solid"
       >
         <Box
           w="220px"
@@ -119,7 +118,7 @@ export default function MyBooks() {
           <A href="https://inkfestival.org/" target="_blank">
             INK Festival
           </A>{" "}
-          starring Chris Larner (formerly of “London’s Burning” fame).
+          starring Chris Larner (formerly of “London&apos;s Burning” fame).
         </P>
 
         <P>
@@ -128,8 +127,8 @@ export default function MyBooks() {
         </P>
 
         <P>
-          Given five stars by the ipaper, it was described as a 'tour de force'
-          and a 'powerful, disturbing work. It was also listed by The Times as
+          Given five stars by the ipaper, it was described as a “tour de force”
+          and a “powerful, disturbing work”. It was also listed by The Times as
           being one of the 40 Must See Shows At The Fringe 2023.
         </P>
 
