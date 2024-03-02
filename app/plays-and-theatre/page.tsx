@@ -104,7 +104,10 @@ export default function MyBooks() {
         </Box>
 
         <PLarge my={8} p={3} border="1px solid" color="gray.700">
-          <i>“A tour de force”</i> — <Box as="span">The i Paper</Box>
+          <i>“A tour de force”</i>{" "}
+          <Box as="span" whiteSpace="nowrap">
+            — The i Paper
+          </Box>
         </PLarge>
 
         <P>
