@@ -136,7 +136,7 @@ export default function MyBooks() {
 
         <Divider my={7} />
 
-        <H3>Read some of the write ups below:</H3>
+        <H3>Read some of the write ups:</H3>
 
         <ListicalLink
           href="https://inews.co.uk/culture/radio/radio-drama-powerful-vital-cuts-funding-crisis-2282287"

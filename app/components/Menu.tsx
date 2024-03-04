@@ -76,20 +76,29 @@ export const Menu = () => {
       <Drawer onClose={onClose} isOpen={isOpen} size={["full", null, "md"]}>
         <DrawerOverlay />
         <DrawerContent p={0}>
-          <DrawerCloseButton
-            aria-label="Close menu"
-            color="white"
-            fontSize="xl"
-            rounded="full"
-            bg="blackAlpha.700"
-            size="lg"
-            top={[3, null, 14]}
-            right={[4, null, 14]}
-            h={12}
-            w={12}
-          />
-          <DrawerHeader p={[6, null, 9]}>
-            <H3>Rob Crossan</H3>
+          <DrawerHeader
+            p={[6, null, 9]}
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <H3 mb={0} lineHeight="40px">
+              Rob Crossan
+            </H3>
+            <DrawerCloseButton
+              aria-label="Close menu"
+              color="white"
+              fontSize="xl"
+              rounded="full"
+              bg="blackAlpha.700"
+              size="lg"
+              position="relative"
+              h={12}
+              w={12}
+              top="auto"
+              left="auto"
+              right="auto"
+            />
           </DrawerHeader>
           <DrawerBody
             display="flex"
