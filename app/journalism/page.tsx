@@ -1,4 +1,5 @@
 "use client";
+import { InfoOutlineIcon } from "@chakra-ui/icons";
 import { Box, Divider, Flex, FlexProps, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -105,20 +106,48 @@ export default function Journalism() {
         </Box>
       </EditorialContainer>
       <EditorialContainer py={[8, null, 10]} bg="orange.50">
-        <H3>Read some of my previous travel stories:</H3>
+        <H3>Read some of my previous travel stories</H3>
 
         {articlesJson.map((article, i) => (
           <Box key={i}>
             <ListicalLink href={article.link}>
               {article.title}
-              {/* {article.subtitle && (
-                <TravelLink.Subheader>{article.subtitle}</TravelLink.Subheader>
-              )} */}
+              {article.subtitle && (
+                <ListicalLink.Subheader>
+                  {article.subtitle}
+                </ListicalLink.Subheader>
+              )}
             </ListicalLink>
 
             <Divider my={0} />
           </Box>
         ))}
+
+        <Box
+          border="2px solid"
+          borderColor="orange.500"
+          rounded="2xl"
+          bg="white"
+          p={[6, null, 10]}
+          mt={10}
+        >
+          <Flex align="start">
+            <InfoOutlineIcon
+              width={[6, null, 10]}
+              height="auto"
+              color="orange.500"
+              mr={3}
+            />
+            <PLarge>
+              The Muck Rack site collates almost all of my work from across
+              print and online.
+            </PLarge>
+          </Flex>
+
+          <ListicalLink href="https://muckrack.com/rob-crossan" p={0}>
+            Here’s my authors page
+          </ListicalLink>
+        </Box>
       </EditorialContainer>
 
       <PageFooter />

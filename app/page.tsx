@@ -49,8 +49,10 @@ export default function Home() {
           <PLarge>
             <Highlight
               query={[
-                "freelance journalist and radio presenter based in Stockwell, South London",
-                "travel, lifestyle, food, music, books and disability affairs",
+                "freelance journalist and radio presenter",
+                "over twenty years experience",
+                "travel, lifestyle, food, music, books",
+                "disability affairs",
               ]}
               styles={{
                 bg: "cyan.100",
@@ -59,7 +61,7 @@ export default function Home() {
             >
               Hello, and thanks for dropping by. Very nice to see you. I’m a
               freelance journalist and radio presenter based in Stockwell, South
-              London with over ten years experience writing and talking about
+              London with over twenty years experience writing and talking about
               travel, lifestyle, food, music, books and disability affairs.
             </Highlight>
           </PLarge>
@@ -67,7 +69,7 @@ export default function Home() {
           <PLarge>
             <Highlight
               query={[
-                "The Daily Telegraph, Daily Mail, Sunday Times, BA High Life, Country LIfe, Esquire, GQ, American Express Departures, Luxury London",
+                "The Daily Telegraph, Daily Mail, Mail on Sunday, Sunday Times, Conde Nast Traveller, Country LIfe, Readers Digest, Sunday Express, Luxury London",
                 "BBC radio shows",
                 "BBC 6 Music",
                 "BBC Radio Four",
@@ -78,16 +80,15 @@ export default function Home() {
               }}
             >
               My work appears regularly in publications including The Daily
-              Telegraph, Daily Mail, Sunday Times, BA High Life, Country LIfe,
-              Esquire, GQ, American Express Departures, Luxury London and more.
-              I’m regularly heard on BBC radio shows including “From Our Own
-              Correspondent”, “Cerys Matthews” on BBC 6 Music and PM on BBC
-              Radio Four.
+              Telegraph, Daily Mail, Mail on Sunday, Sunday Times, Conde Nast
+              Traveller, Country LIfe, Readers Digest, Sunday Express, Luxury
+              London and more. I’m regularly heard on BBC radio shows including
+              “From Our Own Correspondent” PM on BBC Radio Four and BBC 6 Music.
             </Highlight>
           </PLarge>
           <PLarge mb={0}>
             Please click on the various links to find out more about me, or
-            email me on{" "}
+            email me at{" "}
             <A href="mailto:robcrossan@gmail.com">robcrossan@gmail.com</A>.
           </PLarge>
         </Box>
