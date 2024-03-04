@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Robert Crossan is an established travel and lifestyle journalist and broadcaster. He is one of Britain’s most well travelled writers having written features for national magazines and newspapers on over 75 countries.",
   keywords:
     "journalism, travel journalism, lifestyle journalist, journalist, broadcaster, celebrity interviews, music journalism, voice over artist, united states, america, london, united kingdom, europe",
+  openGraph: {
+    images: "https://robcrossan.vercel.app/og-image.jpg",
+  },
 };
 
 export default function RootLayout({
