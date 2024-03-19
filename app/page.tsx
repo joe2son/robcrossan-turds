@@ -1,4 +1,4 @@
-import { Box, Flex, Highlight, Stack } from "@chakra-ui/react";
+import { Box, Flex, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import { A, H1, H2, PLarge } from "./atoms/typography";
 import { Card } from "./components/Card";
@@ -47,44 +47,19 @@ export default function Home() {
         >
           <H2 color="orange.400">Welcome</H2>
           <PLarge>
-            <Highlight
-              query={[
-                "freelance journalist and radio presenter",
-                "over twenty years experience",
-                "travel, lifestyle, food, music, books",
-                "disability affairs",
-              ]}
-              styles={{
-                bg: "cyan.100",
-                whiteSpace: "normal",
-              }}
-            >
-              Hello, and thanks for dropping by. Very nice to see you. I’m a
-              freelance journalist and radio presenter based in Stockwell, South
-              London with over twenty years experience writing and talking about
-              travel, lifestyle, food, music, books and disability affairs.
-            </Highlight>
+            Hello, and thanks for dropping by. Very nice to see you. I’m a
+            freelance journalist and radio presenter based in Stockwell, South
+            London with over twenty years experience writing and talking about
+            travel, lifestyle, food, music, books and disability affairs.
           </PLarge>
 
           <PLarge>
-            <Highlight
-              query={[
-                "The Daily Telegraph, Daily Mail, Mail on Sunday, Sunday Times, Conde Nast Traveller, Country LIfe, Readers Digest, Sunday Express, Luxury London",
-                "BBC radio shows",
-                "BBC 6 Music",
-                "BBC Radio Four",
-              ]}
-              styles={{
-                bg: "cyan.100",
-                whiteSpace: "normal",
-              }}
-            >
-              My work appears regularly in publications including The Daily
-              Telegraph, Daily Mail, Mail on Sunday, Sunday Times, Conde Nast
-              Traveller, Country LIfe, Readers Digest, Sunday Express, Luxury
-              London and more. I’m regularly heard on BBC radio shows including
-              “From Our Own Correspondent” PM on BBC Radio Four and BBC 6 Music.
-            </Highlight>
+            My work appears regularly in publications including The Daily
+            Telegraph, Daily Mail, Mail on Sunday, Sunday Times, Conde Nast
+            Traveller, Country Life, Readers Digest, Sunday Express, Luxury
+            London and more. I’m regularly heard on BBC radio shows including
+            Feedback, From Our Own Correspondent, PM on BBC Radio Four and
+            various shows on BBC 6Music.
           </PLarge>
           <PLarge mb={0}>
             Please click on the various links to find out more about me, or

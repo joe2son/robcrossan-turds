@@ -71,7 +71,7 @@ export default function Journalism() {
         >
           <PLargeDropCap>
             I am one of the UK’s most well travelled writers having visited over
-            140 different countries in the last ten years on assignment for
+            150 different countries in the last twenty years on assignment for
             newspapers and magazines.
           </PLargeDropCap>
 
