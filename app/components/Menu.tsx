@@ -1,6 +1,7 @@
 "use client";
 import { ArrowForwardIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -77,14 +78,17 @@ export const Menu = () => {
         <DrawerOverlay />
         <DrawerContent p={0}>
           <DrawerHeader
-            p={[6, null, 9]}
+            p={[4, null, 9]}
             display="flex"
             justifyContent="space-between"
             alignItems="center"
           >
-            <H3 mb={0} lineHeight="40px">
-              Rob Crossan
-            </H3>
+            <Flex flexGrow={1} align="flex-end" mr={5}>
+              <Link href="/">
+                <H3 mb={0}>Rob Crossan</H3>
+              </Link>
+              <Box h={["3px", null, "4px"]} bg="black" flexGrow={1} mb={[1]} />
+            </Flex>
             <DrawerCloseButton
               aria-label="Close menu"
               color="white"

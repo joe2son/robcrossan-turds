@@ -65,17 +65,17 @@ export const A = (props: LinkProps) => (
 );
 
 export const H1 = (props: HeadingProps) => (
-  <Heading size={["2xl", null, "3xl"]} {...props} />
+  <Heading as="h1" size={["2xl", null, "3xl"]} {...props} />
 );
 
 export const H2 = (props: HeadingProps) => (
-  <Heading size={["xl", null, "2xl"]} mb={6} {...props} />
+  <Heading as="h2" size={["xl", null, "2xl"]} mb={6} {...props} />
 );
 
 export const H3 = (props: HeadingProps) => (
-  <Heading size={["lg", null, "xl"]} mb={6} {...props} />
+  <Heading as="h3" size={["lg", null, "xl"]} mb={6} {...props} />
 );
 
 export const H4 = (props: HeadingProps) => (
-  <Heading size="md" mb={4} {...props} />
+  <Heading as="h4" size="md" mb={4} {...props} />
 );
