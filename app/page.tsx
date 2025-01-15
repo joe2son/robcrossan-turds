@@ -32,7 +32,7 @@ export default function Home() {
           background="linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%)"
           position="relative"
         >
-          <H1 lineHeight={1}>Rob Crossan</H1>
+          <H1 lineHeight={1}>Turdy Turdsworth</H1>
           <Box h={1} flex="1 0" bg="white" />
         </Flex>
       </HomepageHero>
