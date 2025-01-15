@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords:
     "journalism, travel journalism, lifestyle journalist, journalist, broadcaster, celebrity interviews, music journalism, voice over artist, united states, america, london, united kingdom, europe",
   openGraph: {
-    images: "https://robcrossan.vercel.app/og-image.jpg",
+    images: "https://robcrossan-turds.vercel.app/og-image.jpg",
   },
 };
 
